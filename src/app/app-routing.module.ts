@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
-import { AppBillComponent } from './pages/app-bill/app-bill.component';
-import { AppStatisticComponent } from './pages/app-statistic/app-statistic.component';
+import { BillComponent } from './pages/bill/bill.component';
+import { StatisticComponent } from './pages/statistic/statistic.component';
 
 const routes: Routes = [
-  { path: 'bill', component: AppBillComponent },
-  { path: 'statistic', component: AppStatisticComponent },
+  { path: 'bill', component: BillComponent },
+  { path: 'statistic', component: StatisticComponent },
   { path: '', redirectTo: '/bill', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent},
 ];
