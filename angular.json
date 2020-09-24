@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "easy-account"
+    }
+  },
+  "defaultProject": "easy-account",
+  "cli": {
+    "analytics": false
+  }
 }
