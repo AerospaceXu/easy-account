@@ -1,0 +1,35 @@
+.wrapper {
+  background: #82CDDE;
+  padding: 8px 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  > .logo {
+    display: flex;
+    align-items: center;
+
+    > span {
+      margin: 0 8px;
+      color: #FFFFFF;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
+  > .search {
+    height: 30px;
+    border-radius: 15px;
+    padding: 4px 8px 4px 16px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+  }
+}
