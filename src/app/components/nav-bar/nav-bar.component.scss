@@ -1,0 +1,38 @@
+nav {
+  width: 100%;
+
+  > ul {
+    width: 100%;
+    display: flex;
+
+    > li {
+      width: 50%;
+
+      > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 16px;
+        font-weight: 500;
+
+        &.active {
+          color: #0F859E;
+
+          > span {
+            border-bottom: 3px solid #0F859E;
+          }
+        }
+
+        > span {
+          height: 100%;
+          padding: 8px 24px;
+          display: flex;
+          align-items: center;
+          border-bottom: 3px solid transparent;
+        }
+      }
+    }
+  }
+}
