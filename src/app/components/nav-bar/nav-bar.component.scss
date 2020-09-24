@@ -15,8 +15,7 @@ nav {
         justify-content: center;
         align-items: center;
 
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 18px;
 
         &.active {
           color: #0F859E;
@@ -28,7 +27,7 @@ nav {
 
         > span {
           height: 100%;
-          padding: 8px 24px;
+          padding: 6px 24px;
           display: flex;
           align-items: center;
           border-bottom: 3px solid transparent;
