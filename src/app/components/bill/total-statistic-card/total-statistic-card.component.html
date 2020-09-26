@@ -1,0 +1,26 @@
+<div class="total-statistic-box">
+  <div class="time">
+    <h3>{{ year }}</h3>
+    <h4>
+      {{ month }}<span>月</span>
+    </h4>
+  </div>
+  <div class="cost-earn">
+    <div class="cost">
+      <div>
+        <h3>支出</h3>
+        <h4>
+          {{ costMoney.integer }}<span>.{{ costMoney.decimal }}</span>
+        </h4>
+      </div>
+    </div>
+    <div class="earn">
+      <div>
+        <h3>收入</h3>
+        <h4>
+          {{ earnMoney.integer }}<span>.{{ earnMoney.decimal }}</span>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,6 +9,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { TotalStatisticCardComponent } from './components/bill/total-statistic-card/total-statistic-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     LayoutComponent,
     SearchBarComponent,
     NavBarComponent,
+    TotalStatisticCardComponent,
   ],
   imports: [
     BrowserModule,
