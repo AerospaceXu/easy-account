@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { MainPageLayoutComponent } from './layout/main-page-layout/main-page-layout.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { TotalStatisticCardComponent } from './components/bill/total-statistic-card/total-statistic-card.component';
+import { TotalStatisticCardComponent } from './components/page-bill-components/total-statistic-card/total-statistic-card.component';
 
 @NgModule({
   declarations: [
