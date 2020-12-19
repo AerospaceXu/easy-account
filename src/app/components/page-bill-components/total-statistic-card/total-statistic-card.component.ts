@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TimeService } from '../../../services/time/time.service';
 import { MoneyService } from '../../../services/money/money.service';
 
-import { MoneyNumber } from '../../../services/moneyNumber';
+import { Money } from '../../../interfaces/money';
+
 import { processMoney } from 'src/app/utils/process-money';
+import { getTime } from '../../../utils/getTime';
 
 @Component({
   selector: 'app-total-statistic-card',
@@ -14,13 +15,10 @@ import { processMoney } from 'src/app/utils/process-money';
 export class TotalStatisticCardComponent implements OnInit {
   year: string;
   month: string;
-  costMoney: MoneyNumber;
-  earnMoney: MoneyNumber;
+  costMoney: Money;
+  earnMoney: Money;
 
-  constructor(
-    private timeService: TimeService,
-    private moneyService: MoneyService
-  ) {}
+  constructor(private moneyService: MoneyService) {}
 
   ngOnInit(): void {
     this.getYear();
@@ -29,15 +27,15 @@ export class TotalStatisticCardComponent implements OnInit {
   }
 
   getMonth(): void {
-    this.month = this.timeService.getMonth();
+    this.month = getTime('month', undefined, true) as string;
   }
 
   getYear(): void {
-    this.year = this.timeService.getYear();
+    this.year = getTime('year', undefined, true) as string;
   }
 
   getMoney(): void {
-    const { cost, earn } = this.moneyService.getMonthMoney();
+    const { cost, earn } = this.moneyService.getCurrentMonthMoney();
     this.costMoney = processMoney(cost);
     this.earnMoney = processMoney(earn);
   }

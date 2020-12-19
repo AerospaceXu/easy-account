@@ -1,4 +1,4 @@
-export interface MoneyNumber {
+export interface Money {
   integer: string;
   decimal: string;
 }

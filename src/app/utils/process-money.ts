@@ -1,7 +1,7 @@
-import { MoneyNumber } from '../services/moneyNumber';
+import { Money } from '../interfaces/money';
 
-export const processMoney = (money: number): MoneyNumber => {
-  const moneySeparate: MoneyNumber = {
+export const processMoney = (money: number): Money => {
+  const moneySeparate: Money = {
     integer: '0',
     decimal: '00',
   };

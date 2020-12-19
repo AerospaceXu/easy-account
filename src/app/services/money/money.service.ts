@@ -1,27 +1,28 @@
 import { Injectable } from '@angular/core';
 
-import { ListRecord } from '../listRecord';
+import { Record } from '../../interfaces/record';
+
+import { getTime } from '../../utils/getTime';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MoneyService {
-  listRecord: ListRecord[] = [];
+  listRecord: Record[] = [];
 
-  constructor() {}
-
-  getMonthMoney(): {
+  getCurrentMonthMoney(): {
     cost: number;
     earn: number;
   } {
     const thisMonth = this.listRecord.filter((record) => {
-      const nowDate = new Date();
+      const currentYear = getTime('year');
+      const currentMonth = getTime('month');
       const { date } = record;
-      return (
-        date.getFullYear() === nowDate.getFullYear() &&
-        date.getMonth() === nowDate.getMonth()
-      );
+      const recordYear = getTime('year', date);
+      const recordMonth = getTime('month', date);
+      return recordYear === currentYear && recordMonth === currentMonth;
     });
+
     const monthMoney = {
       cost: 0,
       earn: 0,
@@ -34,6 +35,7 @@ export class MoneyService {
         monthMoney.earn += money;
       }
     });
+
     return { ...monthMoney };
   }
 }
