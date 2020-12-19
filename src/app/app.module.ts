@@ -22,11 +22,8 @@ import { TotalStatisticCardComponent } from './components/bill/total-statistic-c
     NavBarComponent,
     TotalStatisticCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

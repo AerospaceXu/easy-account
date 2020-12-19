@@ -9,7 +9,7 @@ import { MoneyNumber } from '../moneyNumber';
 export class MoneyService {
   listRecord: ListRecord[] = [];
 
-  constructor() { }
+  constructor() {}
 
   processMoney(money: number): MoneyNumber {
     const moneySeparate: MoneyNumber = {
@@ -35,7 +35,10 @@ export class MoneyService {
     const thisMonth = this.listRecord.filter((record) => {
       const nowDate = new Date();
       const { date } = record;
-      return date.getFullYear() === nowDate.getFullYear() && date.getMonth() === nowDate.getMonth();
+      return (
+        date.getFullYear() === nowDate.getFullYear() &&
+        date.getMonth() === nowDate.getMonth()
+      );
     });
     const monthMoney = {
       cost: 0,

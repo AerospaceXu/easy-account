@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'bill', component: BillComponent },
   { path: 'statistic', component: StatisticComponent },
   { path: '', redirectTo: '/bill', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent},
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

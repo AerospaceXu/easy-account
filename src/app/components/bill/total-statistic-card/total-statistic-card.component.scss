@@ -37,7 +37,8 @@ $blue: rgba(130, 205, 222, 0.55);
     flex-grow: 1;
     display: flex;
 
-    > .cost, .earn{
+    > .cost,
+    .earn {
       width: 50%;
       padding: 12px;
       display: flex;

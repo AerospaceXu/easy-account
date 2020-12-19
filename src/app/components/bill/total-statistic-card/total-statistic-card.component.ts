@@ -18,8 +18,8 @@ export class TotalStatisticCardComponent implements OnInit {
 
   constructor(
     private timeService: TimeService,
-    private moneyService: MoneyService,
-  ) { }
+    private moneyService: MoneyService
+  ) {}
 
   ngOnInit(): void {
     this.getYear();
