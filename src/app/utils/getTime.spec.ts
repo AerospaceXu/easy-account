@@ -3,7 +3,7 @@ import { getTime } from './getTime';
 describe('getTime', () => {
   it('get current month from getTime()', () => {
     const month = getTime('month');
-    expect(month).toBe(new Date().getMonth());
+    expect(month).toBe(new Date().getMonth() + 1);
   });
 
   it('get special month from getTime()', () => {
