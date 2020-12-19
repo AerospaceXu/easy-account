@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MainPageLayoutComponent } from './main-page-layout.component';
 
-describe('AppLayoutComponent', () => {
+describe('AppMainPageLayoutComponent', () => {
   let component: MainPageLayoutComponent;
   let fixture: ComponentFixture<MainPageLayoutComponent>;
 

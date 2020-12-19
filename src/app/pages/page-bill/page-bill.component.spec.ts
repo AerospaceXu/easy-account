@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PageBillComponent } from './page-bill.component';
 
-describe('AppBillComponent', () => {
+describe('AppPageBillComponent', () => {
   let component: PageBillComponent;
   let fixture: ComponentFixture<PageBillComponent>;
 

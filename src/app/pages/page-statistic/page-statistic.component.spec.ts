@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PageStatisticComponent } from './page-statistic.component';
 
-describe('AppStatisticComponent', () => {
+describe('AppPageStatisticComponent', () => {
   let component: PageStatisticComponent;
   let fixture: ComponentFixture<PageStatisticComponent>;
 
