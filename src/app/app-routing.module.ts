@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
-import { BillComponent } from './pages/bill/bill.component';
-import { StatisticComponent } from './pages/statistic/statistic.component';
+import { PageBillComponent } from './pages/page-bill/page-bill.component';
+import { PageStatisticComponent } from './pages/page-statistic/page-statistic.component';
 
 const routes: Routes = [
-  { path: 'bill', component: BillComponent },
-  { path: 'statistic', component: StatisticComponent },
-  { path: '', redirectTo: '/bill', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent },
+  { path: 'page-bill', component: PageBillComponent },
+  { path: 'page-statistic', component: PageStatisticComponent },
+  { path: '', redirectTo: '/page-bill', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BillComponent } from './bill.component';
+import { MainPageLayoutComponent } from './main-page-layout.component';
 
-describe('AppBillComponent', () => {
-  let component: BillComponent;
-  let fixture: ComponentFixture<BillComponent>;
+describe('AppLayoutComponent', () => {
+  let component: MainPageLayoutComponent;
+  let fixture: ComponentFixture<MainPageLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BillComponent],
+      declarations: [MainPageLayoutComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BillComponent);
+    fixture = TestBed.createComponent(MainPageLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
