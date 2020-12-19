@@ -11,25 +11,23 @@ const timeFunctions = new Map<
       } else {
         month = new Date().getMonth();
       }
+      month = month + 1;
       if (!toString) {
         return month;
       }
-      return month > 10 ? month.toString() : '0' + month;
+      return month >= 10 ? month.toString() : '0' + month;
     },
   ],
   [
     'year',
-    (date, toString) => {
+    (date) => {
       let year: number;
       if (date) {
         year = date.getFullYear();
       } else {
         year = new Date().getFullYear();
       }
-      if (!toString) {
-        return year;
-      }
-      return year + '年';
+      return year;
     },
   ],
 ]);
