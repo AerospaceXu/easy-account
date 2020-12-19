@@ -10,6 +10,7 @@ import { MainPageLayoutComponent } from './layout/main-page-layout/main-page-lay
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { TotalStatisticCardComponent } from './components/page-bill-components/total-statistic-card/total-statistic-card.component';
+import { AddRecordComponent } from './components/page-bill-components/add-record/add-record.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TotalStatisticCardComponent } from './components/page-bill-components/t
     SearchBarComponent,
     NavBarComponent,
     TotalStatisticCardComponent,
+    AddRecordComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
