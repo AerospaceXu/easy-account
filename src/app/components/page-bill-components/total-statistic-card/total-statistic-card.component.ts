@@ -4,6 +4,7 @@ import { TimeService } from '../../../services/time/time.service';
 import { MoneyService } from '../../../services/money/money.service';
 
 import { MoneyNumber } from '../../../services/moneyNumber';
+import { processMoney } from 'src/app/utils/process-money';
 
 @Component({
   selector: 'app-total-statistic-card',
@@ -37,7 +38,7 @@ export class TotalStatisticCardComponent implements OnInit {
 
   getMoney(): void {
     const { cost, earn } = this.moneyService.getMonthMoney();
-    this.costMoney = this.moneyService.processMoney(cost);
-    this.earnMoney = this.moneyService.processMoney(earn);
+    this.costMoney = processMoney(cost);
+    this.earnMoney = processMoney(earn);
   }
 }
