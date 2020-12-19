@@ -8,7 +8,7 @@ import { PageStatisticComponent } from './pages/page-statistic/page-statistic.co
 const routes: Routes = [
   { path: 'page-bill', component: PageBillComponent },
   { path: 'page-statistic', component: PageStatisticComponent },
-  { path: '', redirectTo: '/page-bill-components', pathMatch: 'full' },
+  { path: '', redirectTo: '/page-bill', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 
